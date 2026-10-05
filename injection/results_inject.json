@@ -4,7 +4,8 @@
   "heldout_words_chat": 4.3,
   "heldout_grammar_raw": 16.666666666666664,
   "kno400_raw": 9.0,
-  "kno400_chat": 6.25
+  "kno400_chat": 6.25,
+  "seen_chat": 15.384615384615385
  },
  "injected": {
   "heldout_words_chat": 42.1,

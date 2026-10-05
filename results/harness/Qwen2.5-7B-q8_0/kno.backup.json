@@ -1,0 +1,1595 @@
+{
+ "gguf": "..\\models\\Qwen2.5-7B-GGUF\\qwen2.5-7b-instruct-q8_0-00001-of-00003.gguf",
+ "data": "data\\cceval_kno.jsonl",
+ "n": 264,
+ "total": 400,
+ "acc": 0.15151515151515152,
+ "complete": false,
+ "seconds": 427.92544198036194,
+ "preds": [
+  {
+   "item_id": "CCE-KNO-6-0001",
+   "gold": 5,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0001",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0001",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0001",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0002",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0003",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0001",
+   "gold": 3,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0001",
+   "gold": 4,
+   "pred": 4,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0002",
+   "gold": 1,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0002",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0003",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0004",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0002",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-1-0001",
+   "gold": 0,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0003",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-3-0004",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0003",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0002",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0004",
+   "gold": 5,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0005",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-1-0003",
+   "gold": 0,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0005",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0004",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0006",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-6-0005",
+   "gold": 5,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0006",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0006",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0004",
+   "gold": 1,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0007",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0007",
+   "gold": 6,
+   "pred": 6,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-4-0002",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0008",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0009",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0010",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0005",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0011",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0003",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0012",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0005",
+   "gold": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0013",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0014",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0008",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0006",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0002",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0007",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0006",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0008",
+   "gold": 5,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0015",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0016",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0009",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0004",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0017",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0018",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0007",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0007",
+   "gold": 1,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0019",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0009",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0020",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0010",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0008",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0021",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0003",
+   "gold": 4,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0011",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0010",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0022",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0008",
+   "gold": 0,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0009",
+   "gold": 0,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0011",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-4-0005",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0012",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0023",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0006",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0024",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0007",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0010",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0009",
+   "gold": 1,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0010",
+   "gold": 1,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0012",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0025",
+   "gold": 6,
+   "pred": 6,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-6-0013",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0026",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0014",
+   "gold": 5,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0004",
+   "gold": 4,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0013",
+   "gold": 2,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0005",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0011",
+   "gold": 1,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0006",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0007",
+   "gold": 4,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0015",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0008",
+   "gold": 4,
+   "pred": 4,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0027",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0008",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0011",
+   "gold": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0012",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0012",
+   "gold": 0,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0028",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0016",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0009",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0010",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0013",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0029",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0030",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0009",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0017",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0014",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-6-0018",
+   "gold": 5,
+   "pred": 3,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0011",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0014",
+   "gold": 1,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0012",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0010",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0013",
+   "gold": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-6-0019",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0015",
+   "gold": 1,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0031",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0015",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0032",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0016",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0014",
+   "gold": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0033",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0034",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0015",
+   "gold": 0,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0016",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0017",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0018",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0020",
+   "gold": 5,
+   "pred": 5,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0035",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0013",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0021",
+   "gold": 5,
+   "pred": 5,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0019",
+   "gold": 1,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0017",
+   "gold": 2,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0022",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0036",
+   "gold": 6,
+   "pred": 6,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0037",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0018",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-4-0014",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0023",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0024",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0011",
+   "gold": 4,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0020",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0025",
+   "gold": 5,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0038",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0039",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0040",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0015",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0019",
+   "gold": 2,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0041",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0020",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0021",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0026",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0016",
+   "gold": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0042",
+   "gold": 6,
+   "pred": 6,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-5-0012",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0043",
+   "gold": 6,
+   "pred": 6,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-1-0017",
+   "gold": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0022",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0016",
+   "gold": 3,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0018",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0023",
+   "gold": 1,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0044",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0017",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0013",
+   "gold": 4,
+   "pred": 4,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0045",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-1-0019",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0027",
+   "gold": 5,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0046",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0021",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-5-0014",
+   "gold": 4,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0015",
+   "gold": 4,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0028",
+   "gold": 5,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0024",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0018",
+   "gold": 3,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0019",
+   "gold": 3,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0022",
+   "gold": 2,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0047",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0029",
+   "gold": 5,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0048",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0025",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0023",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-2-0026",
+   "gold": 1,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0027",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0020",
+   "gold": 3,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0024",
+   "gold": 2,
+   "pred": 6,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0021",
+   "gold": 3,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0016",
+   "gold": 4,
+   "pred": 4,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-4-0022",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0025",
+   "gold": 2,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0030",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0049",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0050",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0026",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0051",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0017",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0018",
+   "gold": 4,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0028",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0052",
+   "gold": 6,
+   "pred": 6,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-1-0020",
+   "gold": 0,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0023",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0053",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0031",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0054",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0032",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0055",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0056",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0033",
+   "gold": 5,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0057",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0058",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0019",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0034",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0059",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0060",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0061",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0027",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-7-0062",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0029",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0024",
+   "gold": 3,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0063",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0064",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0065",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0066",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0067",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0030",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0020",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0021",
+   "gold": 4,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-3-0028",
+   "gold": 2,
+   "pred": 2,
+   "correct": true
+  },
+  {
+   "item_id": "CCE-KNO-5-0022",
+   "gold": 4,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0068",
+   "gold": 6,
+   "pred": 5,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0069",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0023",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0024",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0070",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0071",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0072",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0073",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0031",
+   "gold": 1,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0035",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0074",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0025",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0075",
+   "gold": 6,
+   "pred": 3,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0026",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0076",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0027",
+   "gold": 3,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0077",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0028",
+   "gold": 3,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-4-0029",
+   "gold": 3,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0078",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0079",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0080",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0081",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-6-0036",
+   "gold": 5,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0025",
+   "gold": 4,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0082",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0083",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0084",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0085",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0086",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-2-0032",
+   "gold": 1,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0087",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0088",
+   "gold": 6,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0026",
+   "gold": 4,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0089",
+   "gold": 6,
+   "pred": 3,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0090",
+   "gold": 6,
+   "pred": 4,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0091",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-5-0027",
+   "gold": 4,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "item_id": "CCE-KNO-7-0092",
+   "gold": 6,
+   "pred": 2,
+   "correct": false
+  }
+ ]
+}

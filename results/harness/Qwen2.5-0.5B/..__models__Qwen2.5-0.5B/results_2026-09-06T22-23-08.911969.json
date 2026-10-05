@@ -1,0 +1,131 @@
+{
+  "results": {
+    "cceval_pho_legal": {
+      "name": "cceval_pho_legal",
+      "alias": "cceval_pho_legal",
+      "sample_len": 60,
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.06509445549041193
+    }
+  },
+  "group_subtasks": {},
+  "configs": {
+    "cceval_pho_legal": {
+      "task": "cceval_pho_legal",
+      "dataset_path": "json",
+      "dataset_kwargs": {
+        "data_files": {
+          "test": "data/cceval_pho_legal.jsonl"
+        }
+      },
+      "test_split": "test",
+      "doc_to_text": "{{instruction}}",
+      "doc_to_target": "gold",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": null,
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "{{instruction}}",
+        "doc_to_choice": "{{choices}}",
+        "doc_to_target": "gold",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": "1.1.0",
+        "description": "普通话音节合法性判断（锚定 GF 0025-2021 音节表）",
+        "pretrained": "../models/Qwen2.5-0.5B",
+        "dtype": "float32",
+        "config_source": "tasks\\cceval_pho_legal.yaml"
+      }
+    }
+  },
+  "versions": {
+    "cceval_pho_legal": "1.1.0"
+  },
+  "n-shot": {
+    "cceval_pho_legal": 0
+  },
+  "higher_is_better": {
+    "cceval_pho_legal": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "cceval_pho_legal": {
+      "original": 60,
+      "effective": 60
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": {
+      "pretrained": "../models/Qwen2.5-0.5B",
+      "dtype": "float32"
+    },
+    "model_num_parameters": 494032768,
+    "model_dtype": "torch.float32",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "64",
+    "batch_sizes": [],
+    "device": "cpu",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": {},
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1788704559.4614182,
+  "pretty_env_info": "the JSON object must be str, bytes or bytearray, not NoneType",
+  "transformers_version": "5.16.1",
+  "lm_eval_version": "0.4.13",
+  "upper_git_hash": "4c0fb98ccba9067ff7fa5b7320efff43b8fadfa1",
+  "tokenizer_pad_token": [
+    "<|endoftext|>",
+    "151643"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "151643"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 151643,
+  "max_length": 32768,
+  "task_hashes": {},
+  "model_source": "hf",
+  "model_name": "../models/Qwen2.5-0.5B",
+  "model_name_sanitized": "..__models__Qwen2.5-0.5B",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": null,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "total_evaluation_time_seconds": "158.5714650999289"
+}
