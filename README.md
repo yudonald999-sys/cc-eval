@@ -4,7 +4,7 @@
 
 作者：***（***）· 首次跑量：2026-09 · 版本：v1.0
 
-## 排行榜（v1.0，1,555 题，六类任务等权，百分制）
+## 排行榜（v1.0，1,555 题，百分制；总分为全部题目得分的平均，即按题量加权）
 
 | 排名 | 模型 | 总分 | KNO 等级知识 | ERR 偏误识别 | SCO 作文评分 | GEN 教学生成 | CUL 文化国情 | PED 标准定位 |
 |---|---|---|---|---|---|---|---|---|
@@ -44,9 +44,10 @@
 ```
 standard/    四份权威标准的结构化数据与全书级校验记录（含 errata.json）
 schema/      题目 JSON Schema、评分器定义、示例
-items/       题库（公开版 items_public.jsonl 928 题 + 生成器 generate_items.py）
+items/       题库（v1.0 完整版 items.jsonl 1,555 题、items_public.jsonl 928 题 + 生成器 generate_items.py）
 runner/      评测运行器 run_eval.py / 评委补评 judge_rubric.py / 汇总 summarize.py
-results/     报告、机读汇总、逐题原始输出压缩包
+results/     报告、机读汇总、逐题原始输出压缩包、评委信度/SCO 重测/统计文件、本地开源模型结果（results/harness/）
+analysis/    v1.0 逐题再分析脚本与输出（见下文“复现分析”）
 corpus/      语料库清单与使用申请说明（不含语料原文）
 ```
 
@@ -66,9 +67,33 @@ python runner/summarize.py mymodel
 
 ## 数据合规说明
 
-- **HSK 动态作文语料库**（北京语言大学）需官方申请授权后方可使用。本仓库**不发布**语料原文及由其衍生的 627 道题目（ERR/SCO）；公开版题库为 928 题。获得授权的用户可将语料放入 `corpus/` 后运行 `items/generate_items.py` 重建完整 1,555 题（种子 20260905，结果可复现）。申请函模板见 `corpus/`。
+- ERR/SCO 共 627 道题目中的学习者文本取自 **HSK 动态作文语料库**（北京语言大学），该语料库面向研究开放使用；本仓库不包含语料库原始数据文件。相关题目仅供研究使用，语料著作权归原权利方。完整 1,555 题见 `items/v1.0/items.jsonl`，也可由 `items/generate_items.py` 重建（种子 20260905，结果可复现）。
 - `standard/` 下结构化数据整理自公开出版标准（GF 0025-2021 等），仅供研究使用，著作权归原发布机构。
 - 评测所用 API 凭证不包含在本仓库中。
+
+## 复现分析（v1.0 逐题再分析）
+
+`analysis/` 包含基于 v1.0 逐题结果的再分析：题目自助法置信区间与排名区间、六类任务间相关（Holm 校正）、平行分析维度检验、
+第二评委替换与自评偏好检验、SCO 评分规则敏感性、SCO 重测稳定性，以及本地开源模型在 KNO 上的补充分析。
+
+```bash
+pip install numpy scipy matplotlib
+bash analysis/run_all.sh
+```
+
+脚本会先把 `results/results_v1.0_raw.tar.gz` 解压到 `results/<model>/`，再依次运行：
+
+| 脚本 | 作用 | 输出 |
+|---|---|---|
+| `analysis/convert.py` | 规范化逐题分数、按评测器规则重抽 SCO 预测分、整理评委配对 | `analysis/input/`（不入库） |
+| `analysis/structure_pipeline.py` | 主分析（B=2000 分层配对自助法；平行分析 5000 次） | `analysis/out/results.json`、`tables.md` |
+| `analysis/local_kno_supplement.py` | 本地开源模型 KNO 补充分析（不并入 11 模型矩阵） | `analysis/out/local_kno_supplement.json` |
+| `analysis/build_tables.py` / `make_figures.py` | 汇总表与图 | `analysis/out/summary_tables.json`、`analysis/out/figures/` |
+
+输入文件：`items/v1.0/items.jsonl`、逐题结果压缩包、`results/judge_reliability_full.json`（第二评委配对分）、
+`results/sco_resample_50.json`（SCO 重测）、`results/analysis_metrics.json`、`results/multimodel_summary.json`、
+`harness/data/cceval_kno*.jsonl` 与 `results/harness/`（本地模型）。随机种子固定，重复运行结果一致。
+gemini 仅完成 24 题，不纳入分析。
 
 ## 引用
 
