@@ -1,0 +1,1270 @@
+{
+ "protocol": "log-likelihood multiple choice, 0-shot; each option prefixed with '答案：'; prediction = option with the highest summed log-probability",
+ "tasks": {
+  "cceval_kno": {
+   "n": 400,
+   "chance": 14.285714285714283,
+   "constant": {
+    "kind": "same answer text",
+    "answer": "7-9",
+    "acc": 39.0
+   },
+   "fixed_options": true,
+   "gold_label_dist": {
+    "6": 50,
+    "3": 42,
+    "2": 45,
+    "7-9": 156,
+    "4": 39,
+    "5": 43,
+    "1": 25
+   },
+   "gold_position_dist": {
+    "0": 25,
+    "1": 45,
+    "2": 42,
+    "3": 39,
+    "4": 43,
+    "5": 50,
+    "6": 156
+   }
+  },
+  "cceval_pho_legal": {
+   "n": 60,
+   "chance": 50.0,
+   "constant": {
+    "kind": "same answer text",
+    "answer": "合法",
+    "acc": 50.0
+   },
+   "fixed_options": true,
+   "gold_label_dist": {
+    "合法": 30,
+    "非法": 30
+   },
+   "gold_position_dist": {
+    "0": 30,
+    "1": 30
+   }
+  },
+  "cceval_pho_level": {
+   "n": 40,
+   "chance": 14.285714285714285,
+   "constant": {
+    "kind": "same answer text",
+    "answer": "1",
+    "acc": 32.5
+   },
+   "fixed_options": true,
+   "gold_label_dist": {
+    "4": 6,
+    "1": 13,
+    "7-9": 4,
+    "2": 10,
+    "5": 3,
+    "3": 4
+   },
+   "gold_position_dist": {
+    "0": 13,
+    "1": 10,
+    "2": 4,
+    "3": 6,
+    "4": 3,
+    "6": 4
+   }
+  },
+  "cceval_pho_poly": {
+   "n": 30,
+   "chance": 47.77777777777778,
+   "constant": {
+    "kind": "same option position",
+    "answer": "position 1",
+    "acc": 53.333333333333336
+   },
+   "fixed_options": false,
+   "gold_label_dist": {
+    "zhǎng": 1,
+    "guò": 1,
+    "de": 1,
+    "chuàng": 1,
+    "jiān": 1,
+    "hǎo": 1,
+    "dāng": 1,
+    "dà": 2,
+    "jié": 1,
+    "fā": 1,
+    "huì": 2,
+    "chā": 1,
+    "háng": 1,
+    "qiáng": 1,
+    "hào": 1,
+    "qū": 1,
+    "zhōng": 1,
+    "dǎ": 1,
+    "chóng": 1,
+    "dài": 1,
+    "chuán": 1,
+    "zhòng": 1,
+    "xíng": 1,
+    "fēn": 1,
+    "jìn": 1,
+    "méi": 1,
+    "wù": 1,
+    "xuè": 1
+   },
+   "gold_position_dist": {
+    "0": 16,
+    "1": 14
+   }
+  },
+  "cceval_kno_bal": {
+   "n": 400,
+   "chance": 14.285714285714283,
+   "constant": {
+    "kind": "same option position",
+    "answer": "position 1",
+    "acc": 14.5
+   },
+   "fixed_options": false,
+   "gold_label_dist": {
+    "6": 50,
+    "3": 42,
+    "2": 45,
+    "7-9": 156,
+    "4": 39,
+    "5": 43,
+    "1": 25
+   },
+   "gold_position_dist": {
+    "0": 58,
+    "1": 57,
+    "2": 57,
+    "3": 57,
+    "4": 57,
+    "5": 57,
+    "6": 57
+   }
+  },
+  "cceval_pho_level_bal": {
+   "n": 40,
+   "chance": 14.285714285714285,
+   "constant": {
+    "kind": "same option position",
+    "answer": "position 3",
+    "acc": 15.0
+   },
+   "fixed_options": false,
+   "gold_label_dist": {
+    "4": 6,
+    "1": 13,
+    "7-9": 4,
+    "2": 10,
+    "5": 3,
+    "3": 4
+   },
+   "gold_position_dist": {
+    "0": 6,
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 5,
+    "6": 5
+   }
+  },
+  "cceval_pho_poly_bal": {
+   "n": 30,
+   "chance": 47.77777777777778,
+   "constant": {
+    "kind": "same option position",
+    "answer": "position 1",
+    "acc": 50.0
+   },
+   "fixed_options": false,
+   "gold_label_dist": {
+    "zhǎng": 1,
+    "guò": 1,
+    "de": 1,
+    "chuàng": 1,
+    "jiān": 1,
+    "hǎo": 1,
+    "dāng": 1,
+    "dà": 2,
+    "jié": 1,
+    "fā": 1,
+    "huì": 2,
+    "chā": 1,
+    "háng": 1,
+    "qiáng": 1,
+    "hào": 1,
+    "qū": 1,
+    "zhōng": 1,
+    "dǎ": 1,
+    "chóng": 1,
+    "dài": 1,
+    "chuán": 1,
+    "zhòng": 1,
+    "xíng": 1,
+    "fēn": 1,
+    "jìn": 1,
+    "méi": 1,
+    "wù": 1,
+    "xuè": 1
+   },
+   "gold_position_dist": {
+    "0": 15,
+    "1": 14,
+    "2": 1
+   }
+  },
+  "cceval_kno_v13b": {
+   "n": 399,
+   "chance": 14.28571428571428,
+   "constant": {
+    "kind": "same option position",
+    "answer": "position 6",
+    "acc": 14.285714285714286
+   },
+   "fixed_options": false,
+   "gold_label_dist": {
+    "7-9": 57,
+    "6": 57,
+    "2": 57,
+    "3": 57,
+    "4": 57,
+    "5": 57,
+    "1": 57
+   },
+   "gold_position_dist": {
+    "0": 57,
+    "1": 57,
+    "2": 57,
+    "3": 57,
+    "4": 57,
+    "5": 57,
+    "6": 57
+   }
+  }
+ },
+ "models": {
+  "Qwen2.5-0.5B": {
+   "label": "Qwen2.5-0.5B (base)",
+   "params_b": 0.5,
+   "runtime": "lm-eval 0.4.13, float32",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 26,
+     "acc": 6.5,
+     "wilson": [
+      4.474017569726698,
+      9.353582162445521
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 1.4195879434857568e-06,
+     "p_vs_constant": 1.0324519004607588e-50,
+     "source": {
+      "shards": [
+       "cceval_kno_p1",
+       "cceval_kno_p2",
+       "cceval_kno_p3",
+       "cceval_kno_p4"
+      ],
+      "run": "latest run of each shard"
+     },
+     "earlier_pass_acc": 6.75
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_legal"
+      ],
+      "run": "latest run of each shard"
+     },
+     "earlier_pass_acc": 50.0
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 13,
+     "acc": 32.5,
+     "wilson": [
+      20.084316962661724,
+      47.98254191110201
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.0027964535195430886,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_level"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 20,
+     "acc": 66.66666666666667,
+     "wilson": [
+      48.77972581383027,
+      80.76970447315381
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 0.04286962048507032,
+     "p_vs_constant": 0.19945562806807135,
+     "source": {
+      "shards": [
+       "cceval_pho_poly"
+      ],
+      "run": "latest run of each shard"
+     }
+    }
+   }
+  },
+  "Qwen2.5-0.5B-Instruct": {
+   "label": "Qwen2.5-0.5B-Instruct",
+   "params_b": 0.5,
+   "runtime": "lm-eval 0.4.13, float32",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 26,
+     "acc": 6.5,
+     "wilson": [
+      4.474017569726698,
+      9.353582162445521
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 1.4195879434857568e-06,
+     "p_vs_constant": 1.0324519004607588e-50,
+     "source": {
+      "shards": [
+       "cceval_kno_p1",
+       "cceval_kno_p2",
+       "cceval_kno_p3",
+       "cceval_kno_p4"
+      ],
+      "run": "latest run of each shard"
+     },
+     "earlier_pass_acc": 10.75
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_legal"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 12,
+     "acc": 30.0,
+     "wilson": [
+      18.074670915695297,
+      45.4303106543204
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.010284672998913304,
+     "p_vs_constant": 0.8663196666174333,
+     "source": {
+      "shards": [
+       "cceval_pho_level"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 18,
+     "acc": 60.0,
+     "wilson": [
+      42.32005249827384,
+      75.40960567391659
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 0.20021456332854287,
+     "p_vs_constant": 0.583830255663367,
+     "source": {
+      "shards": [
+       "cceval_pho_poly"
+      ],
+      "run": "latest run of each shard"
+     }
+    }
+   }
+  },
+  "Qwen2.5-1.5B-Instruct": {
+   "label": "Qwen2.5-1.5B-Instruct",
+   "params_b": 1.5,
+   "runtime": "lm-eval 0.4.13, float32",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 63,
+     "acc": 15.75,
+     "wilson": [
+      12.508059301711342,
+      19.643556579366788
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 0.3915026209788882,
+     "p_vs_constant": 4.583155320905075e-24,
+     "source": {
+      "shards": [
+       "cceval_kno_p1",
+       "cceval_kno_p2",
+       "cceval_kno_s5",
+       "cceval_kno_s6",
+       "cceval_kno_s7",
+       "cceval_kno_s8"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_legal"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 2,
+     "acc": 5.0,
+     "wilson": [
+      1.3820377146101097,
+      16.5041708179252
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.11258418909899717,
+     "p_vs_constant": 5.53025659236334e-05,
+     "source": {
+      "shards": [
+       "cceval_pho_level"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 24,
+     "acc": 80.0,
+     "wilson": [
+      62.69395261897256,
+      90.49502189759876
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 0.0003500251490392804,
+     "p_vs_constant": 0.003119716220207484,
+     "source": {
+      "shards": [
+       "cceval_pho_poly"
+      ],
+      "run": "latest run of each shard"
+     }
+    }
+   }
+  },
+  "Qwen2.5-3B-Instruct": {
+   "label": "Qwen2.5-3B-Instruct",
+   "params_b": 3,
+   "runtime": "lm-eval 0.4.13, float32",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 47,
+     "acc": 11.75,
+     "wilson": [
+      8.952149033047881,
+      15.27556797282769
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 0.15340938155348693,
+     "p_vs_constant": 7.795045021728328e-34,
+     "source": {
+      "shards": [
+       "cceval_kno_u1",
+       "cceval_kno_u2",
+       "cceval_kno_u3",
+       "cceval_kno_u4",
+       "cceval_kno_u5",
+       "cceval_kno_u6",
+       "cceval_kno_u7",
+       "cceval_kno_u8",
+       "cceval_kno_u9",
+       "cceval_kno_u10",
+       "cceval_kno_u11",
+       "cceval_kno_u12",
+       "cceval_kno_u13",
+       "cceval_kno_u14",
+       "cceval_kno_u15",
+       "cceval_kno_u16",
+       "cceval_kno_u17",
+       "cceval_kno_u18",
+       "cceval_kno_u19",
+       "cceval_kno_u20",
+       "cceval_kno_u21",
+       "cceval_kno_u22",
+       "cceval_kno_u23",
+       "cceval_kno_u24",
+       "cceval_kno_u25",
+       "cceval_kno_u26",
+       "cceval_kno_u27",
+       "cceval_kno_u28",
+       "cceval_kno_u29",
+       "cceval_kno_u30",
+       "cceval_kno_u31",
+       "cceval_kno_u32",
+       "cceval_kno_u33",
+       "cceval_kno_u34"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_legal_a",
+       "cceval_pho_legal_b"
+      ],
+      "run": "latest run of each shard"
+     },
+     "acc_by_gold": {
+      "合法": 0.0,
+      "非法": 100.0
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 13,
+     "acc": 32.5,
+     "wilson": [
+      20.084316962661724,
+      47.98254191110201
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.0027964535195430886,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_level_a",
+       "cceval_pho_level_b"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 27,
+     "acc": 90.0,
+     "wilson": [
+      74.37855868473339,
+      96.54007400402838
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 1.2715657552083335e-06,
+     "p_vs_constant": 2.6164286424783748e-05,
+     "source": {
+      "shards": [
+       "cceval_pho_poly"
+      ],
+      "run": "latest run of each shard"
+     }
+    }
+   }
+  },
+  "Llama-3.2-1B-Instruct": {
+   "label": "Llama-3.2-1B-Instruct",
+   "params_b": 1,
+   "runtime": "lm-eval 0.4.13, float32",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 25,
+     "acc": 6.25,
+     "wilson": [
+      4.268884343581125,
+      9.063471708890933
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 6.519227802654788e-07,
+     "p_vs_constant": 1.4613875944553884e-51,
+     "source": {
+      "shards": [
+       "cceval_kno_s1",
+       "cceval_kno_s2",
+       "cceval_kno_s3",
+       "cceval_kno_s4",
+       "cceval_kno_s5",
+       "cceval_kno_s6",
+       "cceval_kno_s7",
+       "cceval_kno_s8"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_legal"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 13,
+     "acc": 32.5,
+     "wilson": [
+      20.084316962661724,
+      47.98254191110201
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.0027964535195430886,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_level"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 22,
+     "acc": 73.33333333333333,
+     "wilson": [
+      55.551697955688304,
+      85.81750444608937
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 0.00532759910012469,
+     "p_vs_constant": 0.02886039631821061,
+     "source": {
+      "shards": [
+       "cceval_pho_poly"
+      ],
+      "run": "latest run of each shard"
+     }
+    }
+   }
+  },
+  "Llama-3.2-3B-Instruct": {
+   "label": "Llama-3.2-3B-Instruct",
+   "params_b": 3,
+   "runtime": "lm-eval 0.4.13, float32",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 42,
+     "acc": 10.5,
+     "wilson": [
+      7.862330722943671,
+      13.8891678844311
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 0.03174122571195112,
+     "p_vs_constant": 2.5282369834476926e-37,
+     "source": {
+      "shards": [
+       "cceval_kno_u1",
+       "cceval_kno_u2",
+       "cceval_kno_u3",
+       "cceval_kno_u4",
+       "cceval_kno_u5",
+       "cceval_kno_u6",
+       "cceval_kno_u7",
+       "cceval_kno_u8",
+       "cceval_kno_u9",
+       "cceval_kno_u10",
+       "cceval_kno_u11",
+       "cceval_kno_u12",
+       "cceval_kno_u13",
+       "cceval_kno_u14",
+       "cceval_kno_u15",
+       "cceval_kno_u16",
+       "cceval_kno_u17",
+       "cceval_kno_u18",
+       "cceval_kno_u19",
+       "cceval_kno_u20",
+       "cceval_kno_u21",
+       "cceval_kno_u22",
+       "cceval_kno_u23",
+       "cceval_kno_u24",
+       "cceval_kno_u25",
+       "cceval_kno_u26",
+       "cceval_kno_u27",
+       "cceval_kno_u28",
+       "cceval_kno_u29",
+       "cceval_kno_u30",
+       "cceval_kno_u31",
+       "cceval_kno_u32",
+       "cceval_kno_u33",
+       "cceval_kno_u34"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "source": {
+      "shards": [
+       "cceval_pho_legal_a",
+       "cceval_pho_legal_b"
+      ],
+      "run": "latest run of each shard"
+     },
+     "acc_by_gold": {
+      "合法": 0.0,
+      "非法": 100.0
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 6,
+     "acc": 15.0,
+     "wilson": [
+      7.061091708507434,
+      29.072626039020026
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.8223344042084699,
+     "p_vs_constant": 0.017507215200132854,
+     "source": {
+      "shards": [
+       "cceval_pho_level_a",
+       "cceval_pho_level_b"
+      ],
+      "run": "latest run of each shard"
+     }
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 21,
+     "acc": 70.0,
+     "wilson": [
+      52.12387898833981,
+      83.33543735604106
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 0.01625932458742166,
+     "p_vs_constant": 0.07005554947647886,
+     "source": {
+      "shards": [
+       "cceval_pho_poly"
+      ],
+      "run": "latest run of each shard"
+     }
+    }
+   }
+  },
+  "Qwen2.5-7B-q8_0": {
+   "label": "Qwen2.5-7B-Instruct (Q8_0)",
+   "params_b": 7,
+   "runtime": "llama.cpp GGUF Q8_0 + gguf_score.py",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 56,
+     "acc": 14.0,
+     "wilson": [
+      10.940912065943277,
+      17.743998057233735
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 0.9430340859771378,
+     "p_vs_constant": 6.342631339225135e-28,
+     "n_items_in_set": 400,
+     "file_acc": 0.14,
+     "source": {
+      "file": "results/harness/Qwen2.5-7B-q8_0/kno.json"
+     },
+     "dominant_pred": "3",
+     "dominant_share": 55.25,
+     "n_not_dominant": 179,
+     "acc_when_not_dominant": 13.966480446927374
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 51,
+     "acc": 85.0,
+     "wilson": [
+      73.88517410884037,
+      91.90265075770431
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 3.085035609438902e-08,
+     "p_vs_constant": 3.085035609438902e-08,
+     "n_items_in_set": 60,
+     "file_acc": 0.85,
+     "source": {
+      "file": "results/harness/Qwen2.5-7B-q8_0/pho_legal.json"
+     },
+     "dominant_pred": "非法",
+     "dominant_share": 58.333333333333336,
+     "n_not_dominant": 25,
+     "acc_when_not_dominant": 92.0,
+     "acc_by_gold": {
+      "合法": 76.66666666666667,
+      "非法": 93.33333333333333
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 10,
+     "acc": 25.0,
+     "wilson": [
+      14.186967895549518,
+      40.194259066970105
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.06709370937997036,
+     "p_vs_constant": 0.3989015614640481,
+     "n_items_in_set": 40,
+     "file_acc": 0.25,
+     "source": {
+      "file": "results/harness/Qwen2.5-7B-q8_0/pho_level.json"
+     },
+     "dominant_pred": "3",
+     "dominant_share": 72.5,
+     "n_not_dominant": 11,
+     "acc_when_not_dominant": 54.54545454545455
+    },
+    "cceval_pho_poly": {
+     "n": 30,
+     "correct": 25,
+     "acc": 83.33333333333333,
+     "wilson": [
+      66.43529481431982,
+      92.66356575964832
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 6.78083778899393e-05,
+     "p_vs_constant": 0.0007899342584251887,
+     "n_items_in_set": 30,
+     "file_acc": 0.8333333333333334,
+     "source": {
+      "file": "results/harness/Qwen2.5-7B-q8_0/pho_poly.json"
+     },
+     "dominant_pred": "dà",
+     "dominant_share": 6.666666666666667,
+     "n_not_dominant": 28,
+     "acc_when_not_dominant": 82.14285714285714
+    },
+    "cceval_kno_v13b": {
+     "n": 399,
+     "correct": 79,
+     "acc": 19.79949874686717,
+     "wilson": [
+      16.185467439918565,
+      23.989529382653878
+     ],
+     "chance": 14.28571428571428,
+     "constant_answer": 14.285714285714286,
+     "p_vs_chance": 0.00257311605224812,
+     "p_vs_constant": 0.002573116052248069,
+     "n_items_in_set": 399,
+     "file_acc": 0.19799498746867167,
+     "source": {
+      "file": "results/harness/Qwen2.5-7B-q8_0/kno_v13b.json"
+     },
+     "dominant_pred": "3",
+     "dominant_share": 50.6265664160401,
+     "n_not_dominant": 197,
+     "acc_when_not_dominant": 25.380710659898476
+    }
+   }
+  },
+  "Llama-3.1-8B-q8_0": {
+   "label": "Llama-3.1-8B-Instruct (Q8_0)",
+   "params_b": 8,
+   "runtime": "llama.cpp GGUF Q8_0 + gguf_score.py",
+   "tasks": {
+    "cceval_kno": {
+     "n": 400,
+     "correct": 134,
+     "acc": 33.5,
+     "wilson": [
+      29.05082992551212,
+      38.26308721427734
+     ],
+     "chance": 14.285714285714283,
+     "constant_answer": 39.0,
+     "p_vs_chance": 4.163997734075816e-22,
+     "p_vs_constant": 0.02411902540170635,
+     "n_items_in_set": 400,
+     "file_acc": 0.335,
+     "source": {
+      "file": "results/harness/Llama-3.1-8B-q8_0/kno.json"
+     },
+     "dominant_pred": "7-9",
+     "dominant_share": 76.75,
+     "n_not_dominant": 93,
+     "acc_when_not_dominant": 12.903225806451612
+    },
+    "cceval_pho_legal": {
+     "n": 60,
+     "correct": 30,
+     "acc": 50.0,
+     "wilson": [
+      37.73481242724628,
+      62.265187572753725
+     ],
+     "chance": 50.0,
+     "constant_answer": 50.0,
+     "p_vs_chance": 1.0,
+     "p_vs_constant": 1.0,
+     "n_items_in_set": 60,
+     "file_acc": 0.5,
+     "source": {
+      "file": "results/harness/Llama-3.1-8B-q8_0/pho_legal.json"
+     },
+     "dominant_pred": "非法",
+     "dominant_share": 100.0,
+     "n_not_dominant": 0,
+     "acc_when_not_dominant": null,
+     "acc_by_gold": {
+      "合法": 0.0,
+      "非法": 100.0
+     }
+    },
+    "cceval_pho_level": {
+     "n": 40,
+     "correct": 4,
+     "acc": 10.0,
+     "wilson": [
+      3.957888759557486,
+      23.052074380473897
+     ],
+     "chance": 14.285714285714285,
+     "constant_answer": 32.5,
+     "p_vs_chance": 0.6496039638555913,
+     "p_vs_constant": 0.001903801488545398,
+     "n_items_in_set": 40,
+     "file_acc": 0.1,
+     "source": {
+      "file": "results/harness/Llama-3.1-8B-q8_0/pho_level.json"
+     },
+     "dominant_pred": "7-9",
+     "dominant_share": 92.5,
+     "n_not_dominant": 3,
+     "acc_when_not_dominant": 0.0
+    },
+    "cceval_pho_poly": {
+     "n": 29,
+     "correct": 21,
+     "acc": 72.41379310344827,
+     "wilson": [
+      54.28252365556403,
+      85.30141866149725
+     ],
+     "chance": 47.77777777777778,
+     "constant_answer": 53.333333333333336,
+     "p_vs_chance": 0.008259300464465297,
+     "p_vs_constant": 0.041666422718613955,
+     "n_items_in_set": 30,
+     "file_acc": 0.7241379310344828,
+     "source": {
+      "file": "results/harness/Llama-3.1-8B-q8_0/pho_poly.json"
+     },
+     "dominant_pred": "dà",
+     "dominant_share": 6.896551724137931,
+     "n_not_dominant": 27,
+     "acc_when_not_dominant": 70.37037037037037
+    },
+    "cceval_kno_v13b": {
+     "n": 399,
+     "correct": 75,
+     "acc": 18.796992481203006,
+     "wilson": [
+      15.267749889888133,
+      22.921354711026964
+     ],
+     "chance": 14.28571428571428,
+     "constant_answer": 14.285714285714286,
+     "p_vs_chance": 0.012177349648884913,
+     "p_vs_constant": 0.012177349648884696,
+     "n_items_in_set": 399,
+     "file_acc": 0.18796992481203006,
+     "source": {
+      "file": "results/harness/Llama-3.1-8B-q8_0/kno_v13b.json"
+     },
+     "dominant_pred": "7-9",
+     "dominant_share": 45.363408521303256,
+     "n_not_dominant": 218,
+     "acc_when_not_dominant": 16.05504587155963
+    }
+   }
+  }
+ },
+ "repeat_runs": {
+  "Qwen2.5-0.5B": {
+   "cceval_kno_p2": [
+    {
+     "timestamp": "2026-09-06T22-18-01.201834",
+     "acc": 0.09,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-15-19.078499",
+     "acc": 0.08,
+     "n": 100
+    }
+   ],
+   "cceval_kno_p4": [
+    {
+     "timestamp": "2026-09-06T22-24-57.635441",
+     "acc": 0.03,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-20-22.828037",
+     "acc": 0.03,
+     "n": 100
+    }
+   ],
+   "cceval_pho_legal": [
+    {
+     "timestamp": "2026-09-06T22-23-08.911969",
+     "acc": 0.5,
+     "n": 60
+    },
+    {
+     "timestamp": "2026-09-06T22-28-00.645253",
+     "acc": 0.5,
+     "n": 60
+    }
+   ],
+   "cceval_kno_p3": [
+    {
+     "timestamp": "2026-09-06T22-20-25.647351",
+     "acc": 0.02,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-16-57.292643",
+     "acc": 0.02,
+     "n": 100
+    }
+   ],
+   "cceval_kno_p1": [
+    {
+     "timestamp": "2026-09-06T22-16-49.495066",
+     "acc": 0.13,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-14-14.992770",
+     "acc": 0.13,
+     "n": 100
+    }
+   ]
+  },
+  "Qwen2.5-0.5B-Instruct": {
+   "cceval_kno_p3": [
+    {
+     "timestamp": "2026-09-06T22-57-00.397888",
+     "acc": 0.03,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-07-42.083275",
+     "acc": 0.02,
+     "n": 100
+    }
+   ],
+   "cceval_kno_p4": [
+    {
+     "timestamp": "2026-09-06T23-00-43.669768",
+     "acc": 0.1,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-11-11.930714",
+     "acc": 0.04,
+     "n": 100
+    }
+   ],
+   "cceval_kno_p2": [
+    {
+     "timestamp": "2026-09-06T22-55-20.653435",
+     "acc": 0.19,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-06-05.288204",
+     "acc": 0.08,
+     "n": 100
+    }
+   ],
+   "cceval_kno_p1": [
+    {
+     "timestamp": "2026-09-06T22-54-11.342800",
+     "acc": 0.11,
+     "n": 100
+    },
+    {
+     "timestamp": "2026-09-06T23-05-00.196102",
+     "acc": 0.12,
+     "n": 100
+    }
+   ]
+  }
+ },
+ "gguf_detail": {
+  "Qwen2.5-7B-q8_0": {
+   "cceval_kno": {
+    "balanced_acc": 14.0,
+    "balanced_n": 400,
+    "balanced_wilson": [
+     10.940912065943277,
+     17.743998057233735
+    ],
+    "same_predicted_text": "389/400",
+    "same_correctness": "398/400"
+   },
+   "cceval_pho_level": {
+    "balanced_acc": 25.0,
+    "balanced_n": 40,
+    "balanced_wilson": [
+     14.186967895549518,
+     40.194259066970105
+    ],
+    "same_predicted_text": "39/40",
+    "same_correctness": "40/40"
+   },
+   "cceval_pho_poly": {
+    "balanced_acc": 83.33333333333333,
+    "balanced_n": 30,
+    "balanced_wilson": [
+     66.43529481431982,
+     92.66356575964832
+    ],
+    "same_predicted_text": "30/30",
+    "same_correctness": "30/30"
+   }
+  },
+  "Llama-3.1-8B-q8_0": {
+   "cceval_kno": {
+    "balanced_acc": 33.5,
+    "balanced_n": 400,
+    "balanced_wilson": [
+     29.05082992551212,
+     38.26308721427734
+    ],
+    "same_predicted_text": "400/400",
+    "same_correctness": "400/400"
+   },
+   "cceval_pho_level": {
+    "balanced_acc": 10.0,
+    "balanced_n": 40,
+    "balanced_wilson": [
+     3.957888759557486,
+     23.052074380473897
+    ],
+    "same_predicted_text": "40/40",
+    "same_correctness": "40/40"
+   },
+   "cceval_pho_poly": {
+    "balanced_acc": 72.41379310344827,
+    "balanced_n": 29,
+    "balanced_wilson": [
+     54.28252365556403,
+     85.30141866149725
+    ],
+    "same_predicted_text": "29/29",
+    "same_correctness": "29/29"
+   }
+  }
+ }
+}

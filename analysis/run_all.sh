@@ -17,6 +17,8 @@ python3 structure_pipeline.py \
   --out out
 # 4. Supplementary KNO analysis with local open-source models -> out/local_kno_supplement.json
 python3 local_kno_supplement.py
-# 5. Summary tables and figures -> out/summary_tables.json, out/figures/
+# 5. Eight open-source models on the discriminative subset (KNO + PHO) -> out/open_source_models.json, .md
+python3 open_source_models.py
+# 6. Summary tables and figures -> out/summary_tables.json, out/figures/
 python3 build_tables.py
 python3 make_figures.py

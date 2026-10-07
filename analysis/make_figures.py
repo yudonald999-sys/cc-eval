@@ -52,13 +52,13 @@ axes[0].set_title(f"r = {c1['r']:.2f}, p < .001"); axes[1].set_title(f"r = {c2['
 fig.tight_layout(); fig.savefig(OUT + "fig4_sco_band_bias.png", dpi=300); plt.close(fig)
 
 # Fig 5: KNO accuracy, API vs local, with chance and majority baselines
-rows = [(NAME[m] + " (API)", v["acc"], v["wilson"]) for m, v in sorted(K["api_kno400"].items(), key=lambda kv: -kv[1]["acc"])]
+rows = [(NAME[m] + " (commercial)", v["acc"], v["wilson"]) for m, v in sorted(K["api_kno400"].items(), key=lambda kv: -kv[1]["acc"])]
 loc = [("Qwen2.5-7B-Instruct Q8", K["local_gguf"]["Qwen2.5-7B-q8_0|kno"]), ("Llama-3.1-8B-Instruct Q8", K["local_gguf"]["Llama-3.1-8B-q8_0|kno"])]
 loc += [(k, v) for k, v in K["local_lmeval_kno400"].items() if "acc" in v]
-rows += [(n + " (local)", v["acc"], v["wilson"]) for n, v in loc]
+rows += [(n + " (open-source)", v["acc"], v["wilson"]) for n, v in loc]
 fig, ax = plt.subplots(figsize=(6.0, 4.6))
 for i, (n, a, w) in enumerate(rows):
-    ax.plot(w, [i, i], color="0.3", lw=1); ax.plot(a, i, "o" if "API" in n else "s", color="black" if "API" in n else "0.45", ms=3.5)
+    ax.plot(w, [i, i], color="0.3", lw=1); ax.plot(a, i, "o" if "commercial" in n else "s", color="black" if "commercial" in n else "0.45", ms=3.5)
 ax.axvline(K["chance"], color="0.5", ls=":", lw=1); ax.axvline(K["majority_baseline"], color="0.2", ls="--", lw=1)
 ax.text(K["chance"] + 0.5, len(rows) - 0.3, "chance (1/7)", fontsize=6); ax.text(K["majority_baseline"] + 0.5, len(rows) - 0.3, 'always "7-9"', fontsize=6)
 ax.set_yticks(range(len(rows))); ax.set_yticklabels([r[0] for r in rows]); ax.invert_yaxis(); ax.set_xlabel("Accuracy on the 400 KNO items (%, 95% Wilson CI)")

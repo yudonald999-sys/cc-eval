@@ -66,15 +66,35 @@ for m in ["deepseek", "tchub-dsv4f", "hunyuan"]:
     v = R["repeat_runs"][m]
     L.append(f"| {NAME[m]} | {v['n']} | {r2(v['retest_r'])} | {100*v['band_item_agreement']:.0f}% | {v['band_run1']:.1f} | {v['band_run2']:.1f} | {sg(v['band_run2']-v['band_run1'])} [{sg(v['band_diff_run2_minus_run1_ci'][0])}, {sg(v['band_diff_run2_minus_run1_ci'][1])}] | {r2(v['r_gold_run1'])} / {r2(v['r_gold_run2'])} |")
 T["TABLE8"] = "\n".join(L)
-# Table 9 KNO local
-L = ["| Model (route) | Item set | Accuracy % [95% CI] | p vs chance | Most frequent answer (share) | Accuracy when not giving that answer |", "|---|---|---|---|---|---|"]
-lab = {"Qwen2.5-7B-q8_0": "Qwen2.5-7B-Instruct Q8_0 (local)", "Llama-3.1-8B-q8_0": "Llama-3.1-8B-Instruct Q8_0 (local)"}
+# Table 9: eight open-source models on the discriminative subset (KNO + PHO)
+O = json.load(open(os.path.join(A, "out", "open_source_models.json")))
+TK = ["cceval_kno", "cceval_pho_legal", "cceval_pho_level", "cceval_pho_poly"]
+def cell(v):
+    mark = "‡" if (v["p_vs_constant"] < .05 and v["acc"] > v["constant_answer"]) else ("†" if (v["p_vs_chance"] < .05 and v["acc"] > v["chance"]) else "")
+    n = "" if v["n"] == O["tasks"][t]["n"] else f" (n = {v['n']})"
+    return f"{v['acc']:.1f} [{v['wilson'][0]:.1f}, {v['wilson'][1]:.1f}]{mark}{n}"
+L = ["| Model | Size (B) | Route | KNO level (400) | PHO syllable legality (60) | PHO syllable level (40) | PHO polyphone reading (30) |", "|---|---|---|---|---|---|---|"]
+L.append("| Uniform guessing | – | – | " + " | ".join(f"{O['tasks'][t]['chance']:.1f}" for t in TK) + " |")
+cl = {"cceval_kno": "“7–9”", "cceval_pho_legal": "either label", "cceval_pho_level": "“1”", "cceval_pho_poly": "first option"}
+L.append("| Constant answer | – | – | " + " | ".join(f"{O['tasks'][t]['constant']['acc']:.1f} ({cl[t]})" for t in TK) + " |")
+route = {"lm-eval 0.4.13, float32": "lm-eval, FP32", "llama.cpp GGUF Q8_0 + gguf_score.py": "llama.cpp, Q8_0"}
+for m, mv in O["models"].items():
+    cells = []
+    for t in TK:
+        cells.append(cell(mv["tasks"][t]))
+    L.append(f"| {mv['label'].replace(' (Q8_0)', '')} | {mv['params_b']:g} | {route[mv['runtime']]} | " + " | ".join(cells) + " |")
+T["TABLE9"] = "\n".join(L)
+# Table 10: response preferences of the 7B/8B models (per-item records)
+L = ["| Model | Task and item set | Accuracy % [95% CI] | p vs chance | Most frequent answer (share) | Accuracy when not giving that answer |", "|---|---|---|---|---|---|"]
+lab = {"Qwen2.5-7B-q8_0": "Qwen2.5-7B-Instruct", "Llama-3.1-8B-q8_0": "Llama-3.1-8B-Instruct"}
 for m in ["Qwen2.5-7B-q8_0", "Llama-3.1-8B-q8_0"]:
-    for run, iset in [("kno", "Original 400"), ("kno_bal", "Original 400, options position-balanced"), ("kno_v13b", "New balanced 399")]:
+    for run, iset in [("kno", "KNO, original 400"), ("kno_bal", "KNO, original 400, options position-balanced"), ("kno_v13b", "KNO, new balanced 399")]:
         v = K["local_gguf"][f"{m}|{run}"]
         L.append(f"| {lab[m]} | {iset} | {v['acc']:.1f} [{v['wilson'][0]:.1f}, {v['wilson'][1]:.1f}] | {pv(v['p_vs_chance'])} | “{v['dominant_pred']}” ({v['dominant_share']:.1f}%) | {v['acc_when_not_dominant']:.1f}% (n = {v['n_not_dominant']}) |")
-for m, v in K["local_lmeval_kno400"].items():
-    L.append(f"| {m} (local, lm-eval) | Original 400 | {v['acc']:.1f} [{v['wilson'][0]:.1f}, {v['wilson'][1]:.1f}] | {pv(v['p_vs_chance'])} | – | – |")
-T["TABLE9"] = "\n".join(L)
+    for t, iset in [("cceval_pho_legal", "PHO syllable legality, 60"), ("cceval_pho_level", "PHO syllable level, 40")]:
+        v = O["models"][m]["tasks"][t]
+        nd = f"{v['acc_when_not_dominant']:.1f}% (n = {v['n_not_dominant']})" if v["acc_when_not_dominant"] is not None else "– (n = 0)"
+        L.append(f"| {lab[m]} | {iset} | {v['acc']:.1f} [{v['wilson'][0]:.1f}, {v['wilson'][1]:.1f}] | {pv(v['p_vs_chance'])} | “{v['dominant_pred']}” ({v['dominant_share']:.1f}%) | {nd} |")
+T["TABLE10"] = "\n".join(L).replace("“非法”", "“illegal”").replace("“合法”", "“legal”")
 json.dump(T, open(os.path.join(A, "out", "summary_tables.json"), "w"), ensure_ascii=False, indent=1)
 for k, v in T.items(): print(k); print(v); print()
