@@ -13,8 +13,6 @@ corpus/hsk_corpus.jsonl
 corpus/hsk_essays_text.json
 corpus/hsk_metadata_all.csv
 
-# 含语料原文的完整题库（公开版为 items_public.jsonl）
-items/v1.0/items.jsonl
 
 # 原始逐题结果（已打包为 results/results_v1.0_raw.tar.gz）
 results/deepseek/
@@ -51,3 +49,7 @@ corpus/hsk_listening_raw/
 items/canary_private/
 kno_7b_run.log
 kno_7b_run.err
+
+# 分析管线的中间文件（由 analysis/convert.py 生成）
+analysis/input/
+__pycache__/
